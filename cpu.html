@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        
+        <style>
+    table, th, td{
+        border: 1px solid purple; background-color: #e6c8b7; border-radius: 2px; text-align: center;
+    }
+    
+    th:nth-child(odd), td:nth-child(odd) {
+    background-color: #f9edf0
+     }
+     
+     body {
+    background-color: #FDF6F0;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    height: 40px;
+}
+    
+</style>
+    </head>
+    <body>
+    
+    <h1 style= "text-align: center; font-family: Lucida Handwriting, cursive"; >CPU Scheduling</h1>
+        <table width="100%">
+        <caption><b>CPU Scheduling Table</b></caption>
+            <tr>
+                <th>Process</th>
+                <th>AT</th>
+                <th>BT</th>
+                <th>CT</th>
+                <th>TAT</th>
+                <th>WT</th>
+            </tr>
+            <tr>
+                <td>P1</td>
+                <td>4</td>
+                <td>5</td>
+                <td>10</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+             <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>5</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+             <tr>
+                <td>P3</td>
+                <td>5</td>
+                <td>2</td>
+                <td>12</td>
+                <td>7</td>
+                <td>5</td>
+            </tr>
+             <tr>
+                <td>P4</td>
+                <td>15</td>
+                <td>4</td>
+                <td>19</td>
+                <td>4</td>
+                <td>0</td>
+            </tr>
+        </table>
+        
+        <p style="text-align: right;"><b>Ave.</b>5 &nbsp; &nbsp; <b>Ave.</b> 3 &nbsp;</p>
+        
+        <p>
+<b>AT</b> = Arrival Time<br>
+<b>BT</b> = Burst Time<br>
+<b>CT</b> = Completion Time<br>
+<b>TAT</b> = Turnaround Time<br>
+<b>WT</b> = Waiting Time
+</p>
+        
+        <h1 style="text-align:center; font-family:'Courier New', monospace;">Gantt Chart</h1>
+        
+        <table width="100%">
+        <caption><b>Gantt Chart</b></caption>
+            <tr>
+                <th>Idle</th>
+                <th>P2</th>
+                <th>P1</th>
+                <th>P3</th>
+                <th>Idle</th>
+                <th>P4</th>
+            </tr>
+          </table>
+          
+          <p>0 &emsp; &emsp; &emsp; &nbsp; 2 &emsp; &emsp; 5 &emsp; &ensp; 10 &emsp; &emsp; 12 &emsp; &emsp; &emsp; 15 &emsp; &ensp; 19 </p>
+    </body>
+    </html>
